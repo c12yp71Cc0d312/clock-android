@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
         bottomNavigationView.setOnNavigationItemSelectedListener(listener);
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_holder, alarmFragment, "alarm");
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_holder, alarmFragment, "alarm").commit();
 
     }
 
